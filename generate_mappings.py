@@ -57,10 +57,10 @@ def generate(source, filename):
 	print('%s -> %d entries.' % (filename, entries))
 
 def main():
-	generate('kMandarin', 'Mandarin.txt')
-	generate('kHanyuPinyin', 'HanyuPinyin.txt')
-	generate('kTGHZ2013', 'TGHZ2013.txt')
-	generate('kXHC1983', 'XHC1983.txt')
+	generate('kMandarin', 'data/Mandarin.txt')
+	generate('kHanyuPinyin', 'data/HanyuPinyin.txt')
+	generate('kTGHZ2013', 'data/TGHZ2013.txt')
+	generate('kXHC1983', 'data/XHC1983.txt')
 
 if __name__ == '__main__':
 	main()
