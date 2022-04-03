@@ -8,7 +8,7 @@ def add_pinyin(pinyins, toadds):
 			pinyins.append(toadd)
 
 def build_line(hanzi, code, pinyins):
-	line = '%c,%s\t%s\n' % (hanzi, code, ",".join(pinyins))
+	line = '%c\t%s\t%s\n' % (hanzi, code, ",".join(pinyins))
 	return line
 
 def generate(source, filename):
