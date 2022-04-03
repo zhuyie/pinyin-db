@@ -2,6 +2,8 @@
 A simple script that generates a character to pinyin mapping from the Unihan database.
 
 ## Sources
+- Mandarin
+  - The most customary pīnyīn reading for this character. When there are two values, then the first is preferred for zh-Hans (CN) and the second is preferred for zh-Hant (TW). When there is only one value, it is appropriate for both.
 - HanyuPinyin
   - 《漢語大字典》 Hànyǔ Dà Zìdiǎn (HDZ). This data was originally input by 井作恆 Jǐng Zuòhéng, proofed by 聃媽歌 Dān Māgē (Magda Danish, using software donated by 文林 Wénlín Institute, Inc. and tables prepared by 曲理查 Qū Lǐchá), and proofed again and prepared for the Unicode Consortium by 曲理查 Qū Lǐchá (2008-01-14).
 - TGHZ2013

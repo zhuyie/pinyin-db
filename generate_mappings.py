@@ -37,12 +37,15 @@ def generate(source, filename):
 		hanzi = chr(int(code, 16))
 
 		pinyins = []
-		parts = value.split(' ')
-		for part in parts:
-			locations_and_readings = part.split(':')
-			if len(locations_and_readings) != 2:
-				continue
-			add_pinyin(pinyins, locations_and_readings[1].split(','))
+		if source != 'kMandarin':
+			parts = value.split(' ')
+			for part in parts:
+				locations_and_readings = part.split(':')
+				if len(locations_and_readings) != 2:
+					continue
+				add_pinyin(pinyins, locations_and_readings[1].split(','))
+		else:
+			add_pinyin(pinyins, value.split(' '))
 
 		out_file.write(build_line(hanzi, code, pinyins))
 		
@@ -54,6 +57,7 @@ def generate(source, filename):
 	print('%s -> %d entries.' % (filename, entries))
 
 def main():
+	generate('kMandarin', 'Mandarin.txt')
 	generate('kHanyuPinyin', 'HanyuPinyin.txt')
 	generate('kTGHZ2013', 'TGHZ2013.txt')
 	generate('kXHC1983', 'XHC1983.txt')
