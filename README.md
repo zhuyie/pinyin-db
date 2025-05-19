@@ -1,5 +1,5 @@
 # pinyin-db
-A simple script that generates a character to pinyin mapping from the Unihan database.
+A simple script that generates a character to pinyin mapping from the [Unihan database](https://www.unicode.org/Public/UCD/latest/ucd/Unihan.zip).
 
 ## Sources
 - Mandarin
